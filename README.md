@@ -2,7 +2,7 @@
 
 # SUBGEN AI SUBTITLE GENERATOR (CLI)
 
-A simple and efficient command-line tool that uses OpenAI's Whisper model to automatically transcribe and generate subtitles (.srt files) from any video file.
+SubgenAI is a simple and efficient command-line tool that leverages OpenAI's Whisper model to automatically transcribe and generate English subtitles from video files. With just a few simple commands, SubgenAI can extract audio from videos, transcribe it, and save the subtitles as SRT files. It supports multiple models for different trade-offs between speed and accuracy, and it provides an option to translate the transcription into English. The tool offers an intuitive interface with full progress tracking, timestamps, and detailed logs for every step in the process.
 
 ## Features
 
@@ -69,11 +69,15 @@ Basic Usage (Automatic Output Name)
 
 This will generate subtitles for my_video.mp4 and save them as my_video.srt.
 ```
-python subgenai.py "my_video.mp4"
+python subgenai.py --video "my_video.mp4"
 ```
 Specify an Output File Name
 
 This will save the subtitles as custom_subs.srt.
 ```
-python subgenai.py "my_video.mp4" "custom_subs.srt"
+python subgenai.py --video "my_video.mp4" --output "custom_subs.srt"
+```
+For Custom models 
+```
+python subgenai.py --video "my_video.mp4" --output "custom_subs.srt" --model "medium"
 ```
