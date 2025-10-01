@@ -71,7 +71,7 @@ cd subgenAI
 **Windows**:
 ```bash
 python -m venv venv
-.env\Scriptsctivate
+.\env\Scripts\ctivate
 ```
 
 **macOS / Linux**:
