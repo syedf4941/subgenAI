@@ -34,16 +34,16 @@ Before you begin, ensure you have the following installed on your system:
 Follow these steps to get the tool ready for use:
 
 1. Clone the repository:
-   ```bash
+```
    git clone https://github.com/YOUR_USERNAME/whisper-subtitle-cli.git
    
    cd whisper-subtitle-cli
-  ```
+```
 
-   Create and activate a virtual environment (recommended):
+### Create and activate a virtual environment (recommended):
 
 Windows:
-```bash
+```
 python -m venv venv
 .\venv\Scripts\activate
   ```
