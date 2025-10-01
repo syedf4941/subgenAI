@@ -59,18 +59,19 @@ pip install -r requirements.txt
 
   - Note: The first time you run the script, Whisper will download the specified model (default is "base"), which may take some time and require a good internet connection.
 
-Usage
+## Usage
 
 You can run the script from your terminal:
 
 Basic Usage (Automatic Output Name)
 
 This will generate subtitles for my_video.mp4 and save them as my_video.srt.
-
-python video_to_subs.py "path/to/my_video.mp4"
-
+```
+python subgenai.py "my_video.mp4"
+```
 Specify an Output File Name
 
 This will save the subtitles as custom_subs.srt.
-
-python video_to_subs.py "path/to/my_video.mp4" "path/to/custom_subs.srt"
+```
+python subgenai.py "my_video.mp4" "custom_subs.srt"
+```
