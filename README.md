@@ -1,83 +1,133 @@
-<p aligh="center"><img src="https://raw.githubusercontent.com/nfs-tech-bd/subgenAI/refs/heads/main/Screenshot%202025-10-01%20154442.png" height="400" weidth="600"></p><br>
+# 🎬 SUBGEN AI — Subtitle Generator (CLI)
 
-# SUBGEN AI SUBTITLE GENERATOR (CLI)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nfs-tech-bd/subgenAI/refs/heads/main/Screenshot%202025-10-01%20154442.png" height="400" width="600">
+</p>
 
-SubgenAI is a simple and efficient command-line tool that leverages OpenAI's Whisper model to automatically transcribe and generate English subtitles from video files. With just a few simple commands, SubgenAI can extract audio from videos, transcribe it, and save the subtitles as SRT files. It supports multiple models for different trade-offs between speed and accuracy, and it provides an option to translate the transcription into English. The tool offers an intuitive interface with full progress tracking, timestamps, and detailed logs for every step in the process.
+---
 
-## Features
+## 🚀 Overview
 
-- **Simple Command-Line Interface**: Easy to use directly from your terminal.
-- **Automatic Naming**: If no output file is specified, it automatically saves the subtitles as `your_video_name.srt`.
-- **Translate to English**: Directly translates the transcription from any source language into English.
-- **Efficient & Clean**: Uses a temporary directory for audio files and cleans up automatically after processing.
-- **Flexible Model Choice**: Easily change the Whisper model size (`tiny`, `base`, `small`, `medium`, `large`) for a trade-off between speed and accuracy.
+**SubgenAI** is a lightweight and efficient **command-line tool** that uses **OpenAI's Whisper model** to automatically transcribe and generate subtitles (`.srt`) from video files.  
 
-## Tech Stack
+✨ With a few simple commands, you can:  
+- Extract audio from any video  
+- Generate accurate subtitles  
+- Optionally translate them into **English**  
+- Save directly as `.srt` with automatic or custom file naming  
 
-- **Backend**: Python
-- **Transcription**: OpenAI Whisper
-- **Audio Extraction**: FFmpeg
+---
 
-## Prerequisites
+## ✨ Features
 
-Before you begin, ensure you have the following installed on your system:
+- 🎯 **Simple CLI** – Run directly from your terminal  
+- 📝 **Automatic Naming** – Saves as `video_name.srt` if no output is specified  
+- 🌍 **Translate to English** – From any source language  
+- ⚡ **Clean & Efficient** – Uses temporary storage and cleans up automatically  
+- 🔄 **Flexible Models** – Choose from `tiny`, `base`, `small`, `medium`, `large`  
 
-- **Python 3.8+**
-- **FFmpeg**: This is a critical dependency for extracting audio from video.
+---
 
-  ### Installation Instructions:
+## 🛠️ Tech Stack
 
-  - **Windows**: Download from the official website and add the `bin` folder to your system's PATH.
-  - **macOS** (using Homebrew): `brew install ffmpeg`
-  - **Linux** (using apt): `sudo apt update && sudo apt install ffmpeg`
+- **Language**: Python  
+- **Transcription**: OpenAI Whisper  
+- **Audio Extraction**: FFmpeg  
 
-## Installation & Setup
+---
 
-Follow these steps to get the tool ready for use:
+## 📦 Prerequisites
 
-1. Clone the repository:
+Before using SubgenAI, make sure you have:
+
+- 🐍 **Python 3.8+**  
+- 🎵 **FFmpeg** (required for audio extraction)  
+
+### 🔧 Installation Instructions
+
+- **Windows**: Download from the official [FFmpeg site](https://ffmpeg.org/download.html) and add the `bin` folder to PATH  
+- **macOS** (Homebrew):  
+  ```bash
+  brew install ffmpeg
+  ```  
+- **Linux** (apt):  
+  ```bash
+  sudo apt update && sudo apt install ffmpeg
+  ```  
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/nfs-tech-bd/subgenAI
+cd subgenAI
 ```
-   git clone https://github.com/nfs-tech-bd/subgenAI
-```
 
-### Create and activate a virtual environment (recommended):
+### Create and activate a virtual environment (recommended)
 
-Windows:
-```
+**Windows**:
+```bash
 python -m venv venv
-.\venv\Scripts\activate
-  ```
+.env\Scriptsctivate
+```
 
-macOS / Linux:
-  ```
+**macOS / Linux**:
+```bash
 python3 -m venv venv
 source venv/bin/activate
-  ```
-
-Install the required Python packages:
-  ```
-pip install -r requirements.txt
-  ```
-
-  - Note: The first time you run the script, Whisper will download the specified model (default is "base"), which may take some time and require a good internet connection.
-
-## Usage
-
-You can run the script from your terminal:
-
-Basic Usage (Automatic Output Name)
-
-This will generate subtitles for my_video.mp4 and save them as my_video.srt.
 ```
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+⚠️ The first time you run the script, Whisper will download the chosen model (default = `base`).  
+
+---
+
+## ▶️ Usage
+
+### Basic (Automatic Output Name)
+
+```bash
 python subgenai.py --video "my_video.mp4"
 ```
-Specify an Output File Name
+👉 Output: `my_video.srt`  
 
-This will save the subtitles as custom_subs.srt.
-```
+### Specify Output File
+
+```bash
 python subgenai.py --video "my_video.mp4" --output "custom_subs.srt"
 ```
-For Custom models 
-```
+
+### Choose a Model
+
+```bash
 python subgenai.py --video "my_video.mp4" --output "custom_subs.srt" --model "medium"
 ```
+
+---
+
+## 📊 Model Trade-offs
+
+| Model   | Speed 🚀 | Accuracy 🎯 | Size 💾 |
+|---------|----------|-------------|---------|
+| tiny    | Fastest  | Lowest      | ~75 MB  |
+| base    | Fast     | Medium      | ~142 MB |
+| small   | Balanced | Good        | ~466 MB |
+| medium  | Slower   | Very Good   | ~1.5 GB |
+| large   | Slowest  | Best        | ~3 GB   |
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.  
+
+---
+
+💡 *Built with ❤️ by <a href="https://t.me/Nafisfuad1">Nafis Fuad</a> with python and a lot of curiosity.*  
