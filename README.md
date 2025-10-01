@@ -35,9 +35,7 @@ Follow these steps to get the tool ready for use:
 
 1. Clone the repository:
 ```
-   git clone https://github.com/YOUR_USERNAME/whisper-subtitle-cli.git
-   
-   cd whisper-subtitle-cli
+   git clone https://github.com/nfs-tech-bd/subgenAI
 ```
 
 ### Create and activate a virtual environment (recommended):
