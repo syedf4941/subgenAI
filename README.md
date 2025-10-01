@@ -1,3 +1,5 @@
+<p aligh="center"><img src="https://raw.githubusercontent.com/nfs-tech-bd/subgenAI/refs/heads/main/Screenshot%202025-10-01%20154442.png" height="400" weidth="600"></p><br>
+
 # SUBGEN AI SUBTITLE GENERATOR (CLI)
 
 A simple and efficient command-line tool that uses OpenAI's Whisper model to automatically transcribe and generate subtitles (.srt files) from any video file.
